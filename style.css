@@ -51,7 +51,7 @@ body {
     
 }
 
-#about_page , #main{
+#about_page , #main, #footer{
     height: 500px;
     width: 100%;
 
@@ -113,13 +113,14 @@ body {
 
 #main {
     position: relative;
-    top: 500px;
+    top: 400px;
 
 }
 
 #describer {
     flex: 1;
     font-size: 70px;
+    text-align: center;
 }
 
 #app_examples {
@@ -131,6 +132,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+
 
 }
 #top_app {
@@ -150,11 +152,56 @@ body {
 }
 
 #other_apps {
-    flex: 1 0;
-    other
+    flex: 1 0 .333%;
+    text-align: center;
 
+
+}
+
+.minor_apps {
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 33%;
+    text-align: center;
 }
 
 .minor_apps:hover {
     opacity: .5;
+}
+
+#footer {
+
+    position: relative;
+    top: 650px;
+}
+
+#mycontact {
+    flex: 1;
+    font-size: 70px;
+    text-align: center;
+}
+
+#info {
+    flex: 3;
+    border-left:black 5px solid;
+    text-align: center;
+
+}
+
+/* #info p {
+
+    padding: 20px;
+    text-align: center;
+} */
+
+#Ph_em_lnk {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.directory {
+    flex: 1 0 33.333%;
 }
