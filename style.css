@@ -113,7 +113,7 @@ body {
 
 #main {
     position: relative;
-    top: 400px;
+    top: 200px;
 
 }
 
@@ -139,7 +139,19 @@ body {
     padding-top: 200px;
     flex: 6 0 100%;
     margin-right: 50px;
+    position:relative;
+}
 
+#lbl1 {
+    position:absolute;
+    bottom: 10%;
+    right: 46%;
+    background-color: #ff0800;
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+
+    
 }
 
 #top_app a img {
@@ -158,29 +170,35 @@ body {
 
 }
 
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+
 .minor_apps {
     display: inline-block;
-    display: -moz-inline-box;
-    *display: inline; /* For IE7 */
-    zoom: 1; /* Trigger hasLayout */
     width: 33%;
     text-align: center;
 }
 
-.minor_apps:hover {
+
+.minor_thumb:hover {
     opacity: .5;
 }
 
 #footer {
 
     position: relative;
-    top: 650px;
+    top: 300px;
 }
 
 #mycontact {
     flex: 1;
-    font-size: 70px;
+    font-size: 50px;
     text-align: center;
+    width: 100%;
 }
 
 #info {
@@ -190,12 +208,6 @@ body {
 
 }
 
-/* #info p {
-
-    padding: 20px;
-    text-align: center;
-} */
-
 #Ph_em_lnk {
     display: flex;
     flex-wrap: wrap;
@@ -204,4 +216,64 @@ body {
 
 .directory {
     flex: 1 0 33.333%;
+    text-align: center;
 }
+
+.minor_labels {
+    position: relative;
+    bottom: 160px;
+    background-color: #ff0800;
+    width: 150px;
+    left: 80px;
+
+}
+.directory h3 {
+    color: #ff0800;
+
+}
+
+/* Media resizing for tablet */
+@media screen and (max-width: 1130px) {
+    .minor_apps {
+      width: 46%;
+    }
+    #footer {
+        position: relative;
+        top: 750px;
+    }
+
+    #main {
+        position: relative;
+        top: 350px;
+    }
+
+  }
+ 
+  /* Media resizing for large smartphone */
+@media screen and (max-width: 880px) {
+    .minor_apps {
+      width: 96%;
+    }
+
+    #footer {
+        position: relative;
+        top: 1150px;
+    }
+
+    #main {
+        position: relative;
+        top: 600px;
+    }
+
+  }
+
+    /* Media resizing for smartphone */
+
+
+@media screen and (max-width: 880px) {
+    .directory {
+      width: 96%;
+    }
+
+ 
+  }
